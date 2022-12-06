@@ -1,0 +1,16 @@
+//    get latest folder in a directory
+//    public function getLatestArtiFactsPath(): string
+//    {
+//        $latestCreatedDate = 0;
+//        $latestPath = '';
+//        $testRunArtiFactsDirectory = dir(self::TEST_RUN_ARTIFACTS_PATH);
+//
+//        while (false !== ($lastModifiedPath = $testRunArtiFactsDirectory->read())) {
+//            $filepath = self::TEST_RUN_ARTIFACTS_PATH . "/${lastModifiedPath}";
+//            if(is_dir($filepath) && filectime($filepath) > $latestCreatedDate) {
+//                $latestCreatedDate = filectime($filepath);
+//                $latestPath = $lastModifiedPath;
+//            }
+//        }
+//        return self::TEST_RUN_ARTIFACTS_PATH . "/${latestPath}";
+//    }
